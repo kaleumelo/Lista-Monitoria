@@ -1,5 +1,5 @@
-salario_horas= float( input('Quanto voce ganha por hora ?: '))
-horas = float(input('E quantas horas trabalhou no mes ?: '))
+salario_horas= float( input('Quanto voce ganha por hora ?\n '))
+horas = float(input('E quantas horas trabalhou no mes ?\n'))
 salario_bruto = salario_horas * horas
 sindicato = 3
 calculo_sindicato = salario_bruto * (sindicato/100)
@@ -27,7 +27,6 @@ else:
 
 
 print ('Seu salario bruto eh: R$', salario_bruto)
-print ('Esses sao todos os descontos que fazemos no seu salario:\n','Porcentagem do sindicato: ',sindicato,'%\n'
-'Porcentagem do sindicato: ', FGTS,'%\n','Porcentagem do sindicato: ', IR,'%\n')
-print ('Seu salario liquido eh: R$', salario)
-print ('')
+print ('Esses sao todos os descontos que fazemos no seu salario:\n','Porcentagem do sindicato: ',sindicato,'%',', que seria em reais: R$',calculo_sindicato,'\n'
+'Porcentagem do FGTS: ', FGTS,'%',', que seria em reais: R$',calculo_fgts,'\n','Porcentagem do Imposto de Renda: ', IR,'%',', que seria em reais: R$',calculo_ir,'\n')
+print ('Seu salario liquido eh em torno de: R$', salario)
