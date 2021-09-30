@@ -11,24 +11,31 @@ while(1):
 		break
 	else:
 		lista.append(notas)
+
 media = (sum(lista)/len(lista))
-print(len(lista))
-print(lista)
+
+print('Quantidade de notas inseridas: ',len(lista))
+
+print('Lista de notas: ',lista)
+
 lista.reverse()
+
+print('Soma das notas inseridas: ',sum(lista))
+
+print('Media das notas: ',media)
+
+print('Notas que voce inseriu de tras para frente: \n')
 
 for i in range(len(lista)):
     print(lista[i])
 
+
 for i in range(len(lista)):
 	if(lista[i] > media):
 		notas_maiores.append(lista[i])
-print(notas_maiores)
+print('Notas que ficaram acima da media: ',notas_maiores)
 
 for i in range(len(lista)):
 	if(lista[i] < 7):
 		notas_menores.append(lista[i])
-print(notas_menores)
-
-
-print(sum(lista))
-print(media)
+print('Notas que ficaram abaixo de sete :',notas_menores)
